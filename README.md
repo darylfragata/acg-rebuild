@@ -1,4 +1,6 @@
-# Multi-Account AWS Infrastructure as Code
+#This is for A Cloud Guru AWS Infra rebuild once access is expired.
+
+# Multi-Account AWS Structure Infrastructure as Code
 
 ## Overview
 This repository automates the rebuild of AWS cloud resources, particularly in ACG, where resources expire after 4 or 8 hours. It follows a modular approach with environment-specific configurations and reusable modules to manage a multi-account AWS infrastructure setup.
