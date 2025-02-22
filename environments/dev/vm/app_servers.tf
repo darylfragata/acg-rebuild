@@ -6,7 +6,7 @@ module "app_server_01" {
   security_group_ids   = [data.terraform_remote_state.security_groups.outputs.application_sg_id]
   iam_instance_profile = data.terraform_remote_state.iam.outputs.application_role_name
 
-  key_name = var.key_pair
+  module_key_pair = var.key_pair
 
   tags = {
     Environment = "dev"
@@ -22,7 +22,7 @@ module "app_server_02" {
   security_group_ids   = [data.terraform_remote_state.security_groups.outputs.application_sg_id]
   iam_instance_profile = data.terraform_remote_state.iam.outputs.application_role_name
 
-  key_name = var.key_pair
+  module_key_pair = var.key_pair
 
   tags = {
     Environment = "dev"
