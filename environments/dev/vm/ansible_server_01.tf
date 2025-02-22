@@ -7,7 +7,7 @@ module "ansible_server_01" {
   security_group_ids   = [data.terraform_remote_state.security_groups.outputs.ansible_sg_id]
   iam_instance_profile = data.terraform_remote_state.iam.outputs.ansible_role_name
 
-  key_name = var.key_pair
+  module_key_pair = var.key_pair
 
   tags = {
     Environment = "dev"
