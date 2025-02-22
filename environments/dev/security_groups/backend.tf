@@ -1,5 +1,5 @@
 # terraform {
-#   backend "remote" {
+#   backend "s3" {
 #     bucket         = "dev-tfstatefile-021925"
 #     key            = "dev/sg.tfstate"
 #     region         = "us-east-1"
